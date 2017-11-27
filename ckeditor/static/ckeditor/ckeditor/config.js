@@ -7,4 +7,14 @@ CKEDITOR.editorConfig = function( config ) {
 	// Define changes to default configuration here. For example:
 	// config.language = 'fr';
 	// config.uiColor = '#AADC6E';
+    config.allowedContent = {
+        script: true,
+        $1: {
+            // This will set the default set of elements
+            elements: CKEDITOR.dtd,
+            attributes: true,
+            styles: true,
+            classes: true
+        }
+    };
 };
